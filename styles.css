@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Quantum;
+    src: url(Quantum.oft);
+}
+
+html{
+    height:100%;
+    width: 100%;
+}
+body{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding: 3em 5em;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-image: url(mcg.jpg);
+    background-color: rgba(0, 117, 0, 0.4);
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* background-image: linear-gradient(to right top, #2e1751, #351b5e, #3d1f6b, #442478, #4c2886) */
+}
+/* .overlay {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 117, 0, 0.4);
+} */
+h1,
+p{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1;
+    text-shadow: 1px 1px #000;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 6em;
+    letter-spacing: 0px;
+}
+.info{
+    margin-bottom: 4em;
+}
+#mc_embed_signup {
+    margin-bottom: 2em;
+}
+.button{
+    background: none;
+    border: 3px solid white;
+    padding: 1em 2em;
+    color: white;
+}
+.clear{
+    text-align: center;
+}
+.button:hover{
+    color: #2e1751;
+    background: white;
+}
+label,
+input
+{
+    color: white;
+    max-width: 400px;
+}
+.input-field>label{
+    color:white;
+    left: inherit;
+}
+input[type=email]:not(.browser-default),
+input[type=email]:not(.browser-default):focus:not([readonly])
+{
+    border-bottom: white 2px solid;
+    box-shadow: none;
+    /* min-width: 500px; */
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+    body {
+       padding: 2em;
+    }
+    h1{
+        font-size: 5em;
+    }
+    /* input[type=email]:not(.browser-default),
+    input[type=email]:not(.browser-default):focus:not([readonly])
+    {
+        border-bottom: white 2px solid;
+        box-shadow: none;
+        min-width: 300px;
+    } */
+}
